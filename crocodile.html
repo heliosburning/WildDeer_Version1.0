@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de tres secciones 30-30-40</title>
+    <style>
+        .secciones {
+            min-height: calc(100vh - 70px);
+            height: auto;
+            background-color: #000000;
+            position: relative;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .partes {
+            min-height: calc(100vh - 70px - 4rem);
+            padding: 2rem;
+            border-radius: 10px;
+            display: flex;        
+            justify-content: center;     
+            align-items: center;       
+            text-align: center;
+        }
+        .contenedor_elementos {
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: relative;
+        }
+        .wild_deer_info {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            color: antiquewhite;
+        }
+        .seccion {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .seccion h2 {
+            margin-bottom: 1rem;
+        }
+        .seccion-1 p {
+            text-align: justify;
+        }
+        .seccion-2 p {
+            text-align: center;
+        }
+        .seccion-3 {
+            overflow: hidden;
+        }
+        .seccion-3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (min-width: 768px) {
+            .wild_deer_info {
+                flex-direction: row;
+            }
+            .seccion-1, .seccion-2 {
+                flex: 3;
+                width: 25%;
+            }
+            .seccion-3 {
+                flex: 4;
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="secciones">
+        <div class="partes">
+            <div class="contenedor_elementos">
+                <div class="wild_deer_info">
+                    <div class="seccion seccion-1">
+                        <h2>Título 1</h2>
+                        <p>Este es el texto de la primera sección. Está justificado para una apariencia más formal y estructurada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="seccion seccion-2">
+                        <h2>Título 2</h2>
+                        <p>Este es el texto de la segunda sección. Está centrado para un aspecto más balanceado y agradable a la vista. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="seccion seccion-3">
+                        <img src="luffy.jpg" alt="Descripción de la imagen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

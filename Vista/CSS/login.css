@@ -1,0 +1,118 @@
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --first-color: #000000;
+    --second-color: rgba(69, 90, 100, 0.08);
+    --third-color: rgba(62, 57, 107, 0.2);
+    --background-color: #F1F1F1;
+    --form-color: #F4F7FA;
+    --body-font: 'Cambria', 'Georgia', serif;
+    --normal-font-size: 1rem;
+}
+
+body {
+    background: var(--background-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.auth-content {
+    width: 480px;
+    padding: 15px;
+}
+
+.auth-content .card {
+    box-shadow: var(--second-color) 0 1px 20px 0;
+    border: none;
+}
+
+.auth-content .card .card-body {
+    padding: 30px 25px;
+}
+
+.auth-content .form-control {
+    background: var(--form-color);
+    min-height: 42px;
+    font-size: var(--normal-font-size); 
+    padding: 10px 15px;
+}
+
+.form-group {
+    text-align: center; 
+}
+
+.form-group label {
+    display: block; 
+}
+
+label {
+    font-size: var(--normal-font-size); 
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 0.25rem;
+    font-size: var(--normal-font-size); 
+    background-color: var(--first-color);
+    border: 2px solid var(--first-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--first-color);
+    border: 2px solid var(--first-color);
+}
+
+#preloader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--first-color);
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+.contieneloader{
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.loader{
+    background-image: url(../Imagenes/logo.png);
+    width: 100%;
+    height: 100%;          
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a, p {
+    font-size: calc(var(--normal-font-size)); 
+}
+
+.titulo{
+    font-size: calc(var(--normal-font-size)*1.3); 
+    font-weight: bold;
+}
+
